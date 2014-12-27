@@ -6,7 +6,7 @@
 #****************************************************
 function ping_fun()
 {
-	for((i=250;i<=255;i++))
+	for((i=250;i<=250;i++))
 	do
 		for j in {0..255}
 		do
@@ -17,7 +17,7 @@ function ping_fun()
 				let online++
 			else
 				echo -e "\033[31m 172.16.$i.$j is offline\033[0m"
-				let offlint++
+				let offline++
 			fi
 		done
 	done
